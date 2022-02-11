@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>Repository Details</h2>
+
+<mat-dialog-content class="mat-typography">
+    <h3 class="repositoryName">{{data.name}}</h3>
+
+    <p class="language" *ngIf="data.language"><span>Language: </span>{{data.language}}</p>
+
+    <div class="repositoryStatsBg col-12 p-0">
+        <div class="repositoryBox">
+            <p>Watchers</p>
+            <h2>{{data.watchers_count}}</h2>
+        </div>
+        <div class="repositoryBox">
+            <p>Forks</p>
+            <h2>{{data.forks_count}}</h2>
+        </div>
+        <div class="repositoryBox">
+            <p>Open Issues</p>
+            <h2>{{data.open_issues_count}}</h2>
+        </div>
+        <div class="repositoryBox">
+            <p>Stargazers</p>
+            <h2>{{data.stargazers_count}}</h2>
+        </div>
+    </div>
+
+    <div class="linkBg">
+        <span>Link: </span>
+        <a href="{{data.html_url}}" target="_blank">{{data.html_url}}</a>
+    </div>
+
+    <p class="description"><span>Description:</span>{{data.description}}</p>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-dialog-close class="dialogCloseButton">Close</button>
+</mat-dialog-actions>

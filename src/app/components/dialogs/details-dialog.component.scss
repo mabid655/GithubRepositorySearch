@@ -1,0 +1,109 @@
+// Colors Variables
+$whiteColor: rgb(255, 255, 255);
+$primaryColor: rgb(35, 40, 46);
+
+// Font Variables
+$fontFamily: Arial;
+
+.mat-dialog-title {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+}
+
+h3.repositoryName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p.language {
+  font-family: $fontFamily;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+
+  span {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+.repositoryStatsBg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 25px 0;
+
+  .repositoryBox {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    border-right: 1px solid #cccccc;
+    &:last-child {
+      border: none;
+    }
+
+    p {
+      font-family: $fontFamily;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 0;
+    }
+
+    h2 {
+      font-family: $fontFamily;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
+
+.linkBg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+
+  span {
+    font-weight: bold;
+    color: #000000;
+    margin-right: 5px;
+  }
+}
+
+p.description {
+  font-family: $fontFamily;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+
+  span {
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+.dialogCloseButton {
+  width: 15%;
+  border: 1px solid $primaryColor;
+  background: $primaryColor;
+  color: $whiteColor;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 0;
+  border-radius: 3px;
+
+  &:focus {
+    outline: 0;
+  }
+}
